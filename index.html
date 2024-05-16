@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Sign-Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7e7ec;
+            margin: 20px 40px; /* Added margin to the top and bottom */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh; /* Set a minimum height for the body */
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            height: 100%; /* Occupy full height of the body */
+        }
+        
+        .form-box {
+            background: #F0F4F8; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 60%; 
+        }
+
+        .left-box {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            background: #FCECEC; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 60%; 
+        }
+
+        .left-box img {
+            width: 80%; 
+            margin-bottom: 20px;
+            height: auto;
+        }
+
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #38e914e3;
+        }
+
+        .social-logos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-logos img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-link a{
+            text-decoration: none;
+        }
+
+        .login-link a:hover{
+            text-decoration: underline;
+            color: #2bb410e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Left box -->
+        <div class="left-box">
+                <img src="./pics/volunteer.jpg" alt="Volunteer Image">
+        </div>
+        <!-- Right Form -->
+        <div class="form-box">
+            <h2>Volunteer Event Sign-Up</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" placeholder="Your age" required>
+
+                <label for="age">Password</label>
+                <input type="password" id="pwd" name="password" placeholder="Your password" required>
+
+                <label for="role">Volunteer Role</label>
+                <select id="role" name="role">
+                    <option value="general">General Volunteer</option>
+                    <option value="coordinator">Coordinator</option>
+                    <option value="helper">Helper</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+
+                <p style="text-align: center; margin-top: 20px;">or sign up with:</p>
+                <div class="social-logos">
+                    <img src="./pics/fb-logo.png" alt="Facebook logo">
+                    <img src="./pics/ggle.png" alt="Google logo">
+                </div>
+
+                <p class="login-link">Already registered? <a href="#">Login here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
